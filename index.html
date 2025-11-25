@@ -2,19 +2,7 @@
 <html lang="en">
 <head>
     <title>DV Final Project</title>
-    <style>
-        html,
-        body {
-            height: 100%;
-        }
-
-        iframe {
-            width: 100%;
-            height: 100%; 
-            border: none;
-        }
-    </style>
-<!-- Looked up that I should make iframe scale with vh viewport height-->
+<!-- Iframe nor html should not be necessary here since no iframes or htmls-->
 </head>
 <body>
 
@@ -22,18 +10,20 @@
     <p>Several visualizations (and discussion) of the question "Where should young people move after graduation?"</p>
     <p>Created by Chris Tillotson, Nick Jobe, and Matthew Luisi, Fall 2025</p>
 
-    <h2>Values Bar Plots</h2>
-    <p>This plot visualizes how young people feel about certain "family values", based on their responses to three different questions.</p>
-    <iframe src="figures/famvalues_barplot0.html" title = "Bar Plot"></iframe>
+    <h2>Table of Contents</h2>
+    <ul>
+        <li><a href="values.html">Young People's Values</a></li>
+        <li><a href="cities.html">City Comparisons</a></li>
+        <li><a href="sources.html">Data Sources</a></li>
+        <li><a href="writeup.html">Writeup</a></li>
+    </ul>
 
-    <h2>Home Price Trends</h2>
-    <p>This map visualizes average home prices, including single family homes and apartments / condos, in the 100 most populous cities in the US.</p>
-     <p>Double click on a state to the right to show only cities in that state, and click more states to enable more.</p>
-    <iframe src="figures/AllStatesTimeSeries.html" title = "Time Series"></iframe>
+    <h2>Introduction</h2>
+    <p>To answer our question of which cities young people should move to after graduation, we needed to separate our efforts into two broad groups: young peoples’ values, and information about cities. To make a recommendation, we first need to know exactly what young people are looking for in a city, because while lower crime, lower cost of living, etc can be thought of as universally desired, exactly how much to prioritize one value over another is not intuitive. Additionally, we needed to know information about the cities to decide which among them were best</p>
 
-       <!-- change this here if I end up making this page a home page, and each html a separate page<p>
-            <a href = "Index.html">Home</a> &nbsp;&nbsp; <a href = "Example1.html">Next</a>
-        </p> -->
+    <p>
+        <a href="values.html">Next</a>
+    </p>
 
 </body>
 </html>
