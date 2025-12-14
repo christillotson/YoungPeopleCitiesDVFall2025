@@ -11,8 +11,16 @@ body {
     background-color: #F0F8FF; /* Alice Blue very light almost gray blue:*/
     color: #2F4F4F ; /* dark slate gray for basic text*/
     font-family: Verdana, sans-serif; /* learned in geovis class sans serif fonts are more readable */
+    height: 100%;
 }
 
+/* https://www.w3schools.com/html/html_iframe.asp */
+/* needed to play around a lot to get the heights and widths adjusted correctly */
+iframe {
+    width: 100%;
+    height: 110vh; 
+    border: none;
+}
 
 /* https://www.w3schools.com/css/css3_borders.asp */
 p {
