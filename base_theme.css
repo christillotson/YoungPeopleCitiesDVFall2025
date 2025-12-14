@@ -17,7 +17,7 @@ body {
 /* https://www.w3schools.com/html/html_iframe.asp */
 /* needed to play around a lot to get the heights and widths adjusted correctly */
 iframe {
-    width: 100vw;
+    width: 95vw;
     height: 120vh; 
     border: none;
 }
