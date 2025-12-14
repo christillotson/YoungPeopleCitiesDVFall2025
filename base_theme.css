@@ -32,15 +32,22 @@ h1 { font-size: 3em; }
 h2 { font-size: 2em; }
 h3 { font-size: 1.5em; }
 
+/*https://stackoverflow.com/questions/4457506/set-the-table-column-width-constant-regardless-of-the-amount-of-text-in-its-cell*/
+/*https://talk.tiddlywiki.org/t/set-width-of-each-columns-for-a-specific-table/5119*/
+/*https://www.w3schools.com/html/html_table_sizes.asp*/ 
+/*https://stackoverflow.com/questions/1258416/word-wrap-in-an-html-table*/
+/*tried many things! frustrating */
 table {
     width: 100%; /* wider */
     font-size: 0.8em; /* smaller fits better */
+    table-layout:fixed;
 }
 
 th, td {
     border: 1px solid;
     padding: 8px;
     text-align: left;
+    word-wrap: break-word;
 }
 
 th {

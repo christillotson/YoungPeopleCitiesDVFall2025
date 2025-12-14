@@ -5,39 +5,74 @@
 <!-- Iframe nor html should not be necessary here since no iframes or htmls-->
  <link rel="stylesheet" href="base_theme.css">
 </head>
-<body>
+
 <body>
 
     <h1>Data Sources</h1>
     <!-- https://www.w3schools.com/html/html_tables.asp -->
-    <table>
+
+    <p>
+        <a href="index.html">Home</a>
+        <a href="cities.html">Previous</a>
+        <a href="writeup.html">Next</a>
+    </p>
+
+    <table> <!-- make sure these widths add up to 100. best way I could come up with to style it in a way that looks nice-->
         <tr>
-            <th>Link</th>
-            <th>File Path in Repo</th>
-            <th>Description</th>
-            <th>Use in Project</th>
+            <th style="width:15%">Link</th>
+            <th style="width:10%">File Name (in data folder)</th>
+            <th style="width:25%">Description</th>
+            <th style="width:15%">Use in Project</th>
+            <th style="width:15%">Direct Download (If Available)</th>
+            <th style="width:20%">Notes</th>
         </tr>
 
         <tr>
-            <td><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Source 1</a></td>
-            <td>data/example1.csv</td>
-            <td>Data about young people's values collected by Gallup.</td>
-            <td>Used for bar plots on the values page.</td>
+            <td><a href="https://www.gallup.com/analytics/651674/gen-z-research.aspx">https://www.gallup.com/analytics/651674/gen-z-research.aspx</a></td>
+            <td>GallupGenZ.csv</td>
+            <td>Data about young people's values collected by Gallup (GenZ sheet in the xlsx).</td>
+            <td>Used for all bar plots on the values page.</td>
+            <td><a href="https://www.gallup.com/file/education/694331/Gallup-Walton_Family_Foundation_Voices_of_Gen_Z_2025_Study_CrossTabs.xlsx">https://www.gallup.com/file/education/694331/Gallup-Walton_Family_Foundation_Voices_of_Gen_Z_2025_Study_CrossTabs.xlsx</a></td>
+            <td>Had to be converted from xlsx to CSV</td>
         </tr>
 
         <tr>
-            <td><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Source 2</a></td>
-            <td>data/example2.xlsx</td>
-            <td>Time series data on values of [all homes included in the index] over the last [x] years</td>
-            <td>Used for the interactive time series plot in the cities page.</td>
+            <td><a href="https://www.zillow.com/research/data/">https://www.zillow.com/research/data/</a></td>
+            <td>Metro_zhvi_uc_sfrcondo_tier_0.33_0.67_sm_sa_month.csv</td>
+            <td>Time series of the average price of all homes by metro area, by Zillow using ZVHI.</td>
+            <td>Used for average home price time series plot.</td>
+            <td><a href="https://files.zillowstatic.com/research/public_csvs/zhvi/Metro_zhvi_uc_sfrcondo_tier_0.33_0.67_sm_sa_month.csv?t=1765738029">https://files.zillowstatic.com/research/public_csvs/zhvi/Metro_zhvi_uc_sfrcondo_tier_0.33_0.67_sm_sa_month.csv?t=1765738029</a></td>
+            <td></td>
         </tr>
 
         <tr>
-            <td><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Source 3</a></td>
-            <td>data/example3.csv</td>
-            <td>Data about [PLACEHOLDER]</td>
-            <td>Used for [PLACEHOLDER]</td>
+            <td><a href="https://www.zillow.com/research/data/">https://www.zillow.com/research/data/</a></td>
+            <td>Metro_zori_uc_sfrcondomfr_sm_month.csv</td>
+            <td>Time series of the average rent of all rentable units by metro area, by Zillow.</td>
+            <td>Used for average home rent time series plot.</td>
+            <td><a href="https://files.zillowstatic.com/research/public_csvs/zori/Metro_zori_uc_sfrcondomfr_sm_month.csv?t=1765738029">https://files.zillowstatic.com/research/public_csvs/zori/Metro_zori_uc_sfrcondomfr_sm_month.csv?t=1765738029</a></td>
+            <td></td>
         </tr>
+
+        <tr>
+            <td><a href="https://edopportunity.org/opportunity/data/downloads/">https://edopportunity.org/opportunity/data/downloads/</a></td>
+            <td>seda_metro_pool_cs_5.0.csv</td>
+            <td>Education data based on cohort studies by metro area. Data collected / hosted by The Educational Opportunity Project at Stanford University</td>
+            <td>Used for map of education scores in 200 metro areas across the US.</td>
+            <td><a href="hhttps://stacks.stanford.edu/file/druid:cs829jn7849/seda_metro_pool_cs_5.0.csv">https://stacks.stanford.edu/file/druid:cs829jn7849/seda_metro_pool_cs_5.0.csv</a></td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td>Own work geocoding (derivative of above)</td>
+            <td>GeocodeEducationTop200.csv</td>
+            <td>Same as above but filtered by top 200 and just for the value intended to plot, exported, then geocoded (basically, add location data of latitude and longitude when previously there was none).</td>
+            <td>Used for map of education scores in 200 metro areas across the US.</td>
+            <td></td>
+            <td>Geocoded using "Geocode Addresses" tool in ArcGIS Pro, a GIS software installed on all Swem Library computers and available to all W&M students (and staff too, most likely). Link to explanation of tool used: <a href="https://pro.arcgis.com/en/pro-app/latest/tool-reference/geocoding/geocode-addresses.htm">https://pro.arcgis.com/en/pro-app/latest/tool-reference/geocoding/geocode-addresses.htm</a></td>
+        </tr>
+
+
     </table>
 
     <p>
