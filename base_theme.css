@@ -1,0 +1,68 @@
+/* https://www.w3schools.com/css/css_comments.asp */
+/* https://www.w3schools.com/css/css_font.asp */
+/* https://www.w3schools.com/css/css_font_websafe.asp */
+/* https://www.w3schools.com/cssref/css_colors.php */
+/* https://www.w3schools.com/css/css_table.asp */
+/* https://www.w3schools.com/css/css_list.asp */
+/* https://www.w3.org/Style/Examples/007/fonts.en.html */
+
+
+body {
+    background-color: #F0F8FF; /* Alice Blue very light almost gray blue:*/
+    color: #2F4F4F ; /* dark slate gray for basic text*/
+    font-family: Verdana, sans-serif; /* learned in geovis class sans serif fonts are more readable */
+}
+
+
+/* https://www.w3schools.com/css/css3_borders.asp */
+p {
+    background-color: #deefff ; /* subtley darker */
+    border-radius: 25px;
+    padding: 10px;
+}
+
+h1, h2, h3 { /* all headings same I am not sure I use all of them */
+    font-family: Georgia, serif; /* serif is cooler looking though :) */
+    text-decoration: underline;
+    color: #162828; /* made this one darker it didn't look right so light */
+}
+
+/* different sizes though */
+h1 { font-size: 3em; }
+h2 { font-size: 2em; }
+h3 { font-size: 1.5em; }
+
+table {
+    width: 100%; /* wider */
+    font-size: 0.8em; /* smaller fits better */
+}
+
+th, td {
+    border: 1px solid;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #8c9ba8;
+    font-weight: bold;
+    color:#162828 /* same as headers */
+}
+
+/* Check this out! https://stackoverflow.com/questions/15448679/using-nth-child-in-tables-tr-td */
+/* https://www.w3schools.com/cssref/sel_nth-child.php */
+tr:nth-child(even) {
+    background-color: #d4e2ee;
+}
+tr:nth-child(odd) {
+    background-color: #babdbf;
+}
+
+ul {
+    list-style-type: square;
+    padding-left: 25px; /* indent basically */
+}
+
+ul li {
+    margin-bottom: 6px;
+}
